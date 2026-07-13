@@ -1,0 +1,129 @@
+:root {
+	--oxford-blue: #002147;
+	--oxford-gold: #c5a572;
+	--cream: #f7f3e9;
+	--text-color: #222;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Open Sans", Arial, sans-serif;
+	color: var(--text-color);
+	background: var(--cream);
+}
+
+/* HEADER & NAVIGATION */
+
+header {
+	background: var(--oxford-blue);
+	color: white;
+	padding: 1rem;
+}
+
+nav {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 1rem;
+	margin: 0;
+	padding: 0;
+}
+
+nav button {
+	background: transparent;
+	border: 1px solid var(--oxford-gold);
+	color: white;
+	padding: 0.4rem 0.8rem;
+	cursor: pointer;
+}
+
+nav button:hover {
+	background: var(--oxford-gold);
+	color: var(--oxford-blue);
+}
+
+/* MAIN CONTENT */
+
+main {
+	max-width: 1200px;
+	margin: 1.5rem auto;
+	padding: 0 1rem;
+}
+
+#hero {
+	background: white;
+	padding: 1.5rem;
+	border-left: 4px solid var(--oxford-gold);
+	margin-bottom: 1.5rem;
+}
+
+.tab-section {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: none; /* DAS HIER FEHLTE - damit sie am Anfang unsichtbar sind */
+    border-radius: 8px; /* Optional: macht es hübscher */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: gibt Tiefe */
+}
+
+/* CHAT */
+
+#chat-window {
+	border: 1px solid #ccc;
+	height: 200px;
+	padding: 0.5rem;
+	overflow-y: auto;
+	margin-bottom: 0.5rem;
+	background: #fafafa;
+}
+
+#chat-form {
+	display: flex;
+	gap: 0.5rem;
+}
+
+#chat-input {
+	flex: 1;
+	padding: 0.4rem;
+}
+
+.msg-you {
+	text-align: right;
+	margin: 0.2rem 0;
+}
+
+.msg-bot {
+	text-align: left;
+	margin: 0.2rem 0;
+	color: var(--oxford-blue);
+}
+
+.note {
+	font-size: 0.85rem;
+	color: #666;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+	nav {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.5rem;
+	}
+
+	nav ul {
+		flex-wrap: wrap;
+	}
+}
