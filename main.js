@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxE9v3EEUAjYas4iXildmJADYsJ9QIVdcJv5ccxpNdCFO8W8xxE8WJaeCx3xDAfpQ/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxs5Kp52nOe0fQTOxYLdIomHxyA1ZIX7G4_apOYRhrmnkGcMxTz7Hrrs7HkFMdKushr/exec';
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Skript gestartet.");
