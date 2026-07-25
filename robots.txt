@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uweschool-sudo.github.io/esl-journey-2026/sitemap.xml
